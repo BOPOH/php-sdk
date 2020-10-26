@@ -555,7 +555,7 @@ class DIDNumber extends ServerObject
         unset($properties['city_prefix'], $properties['country_iso'], $properties['autorenew_enable']);
         $assignType = $this->getAssignType();
 
-        $this->setAssignType(\Didww\API2\Object::ASSIGN_IGNORE);
+        $this->setAssignType(\Didww\API2\BaseObject::ASSIGN_IGNORE);
         $this->fromArray($properties);
         $this->setAssignType($assignType);
     }

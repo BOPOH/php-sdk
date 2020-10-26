@@ -328,14 +328,14 @@ class Order extends ClientObject
     {
         //try to load order properties
         $assignType = $this->getAssignType();
-        $this->setAssignType(\Didww\API2\Object::ASSIGN_IGNORE);
+        $this->setAssignType(\Didww\API2\BaseObject::ASSIGN_IGNORE);
         $array = parent::fromArray($array);
         $this->setAssignType($assignType);
 
         //try to load number properties
         $number = $this->_ensureNumber();
         $assignType = $number->getAssignType();
-        $number->setAssignType(\Didww\API2\Object::ASSIGN_IGNORE);
+        $number->setAssignType(\Didww\API2\BaseObject::ASSIGN_IGNORE);
         $array = $number->fromArray($array);
         $number->setAssignType($assignType);
 

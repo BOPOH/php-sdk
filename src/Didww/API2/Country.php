@@ -173,7 +173,7 @@ class Country extends ServerObject
     }
 
     /**
-     * Object::fromArray overriding
+     * BaseObject::fromArray overriding
      * @param array $array
      *
      * <code>

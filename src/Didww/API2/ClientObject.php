@@ -37,6 +37,6 @@ namespace Didww\API2;
  * @license MIT
  */
 
-abstract class ClientObject extends Object
+abstract class ClientObject extends BaseObject
 {
 }

@@ -39,7 +39,7 @@ namespace Didww\PBXww;
  * @license MIT
  *
  */
-class Request extends \Didww\API2\Object
+class Request extends \Didww\API2\BaseObject
 {
     const PBXWW_DEFAULT_HOST = 'acf.didreseller.com';
 

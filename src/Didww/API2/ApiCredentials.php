@@ -39,7 +39,7 @@ namespace Didww\API2;
  * @copyright Copyright (C) 2012 by Igor Fedoronchuk
  * @license MIT
  */
-class ApiCredentials extends Object
+class ApiCredentials extends BaseObject
 {
     /**
      * password(key) for API2 authorization

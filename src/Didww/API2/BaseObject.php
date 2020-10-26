@@ -30,14 +30,14 @@
 namespace Didww\API2;
 
 /**
- * Object
+ * BaseObject
  *
  * @category DIDWW
  * @package API2
  * @copyright Copyright (C) 2012 by Igor Fedoronchuk and Igor Gonchar
  * @license MIT
  */
-abstract class Object implements \Didww\Utils\ArrayTransform
+abstract class BaseObject implements \Didww\Utils\ArrayTransform
 {
     /**
      * if property doesn't exist - raise notice
@@ -134,7 +134,7 @@ abstract class Object implements \Didww\Utils\ArrayTransform
             if ($key[0] == '_') {
                 continue;
             }
-            if ($value instanceof Object) {
+            if ($value instanceof BaseObject) {
                 $value = $value->toArray($options);
             }
             $result[\Didww\Utils\StringUtil::snakeCase($key)] = $value;

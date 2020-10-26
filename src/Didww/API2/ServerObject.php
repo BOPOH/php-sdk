@@ -37,7 +37,7 @@ namespace Didww\API2;
  * @copyright Copyright (C) 2012 by Igor Fedoronchuk
  * @license MIT
  */
-abstract class ServerObject extends Object
+abstract class ServerObject extends BaseObject
 {
     /**
      * static global client property
